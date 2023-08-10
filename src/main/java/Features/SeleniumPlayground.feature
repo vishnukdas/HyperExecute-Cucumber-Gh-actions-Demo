@@ -1,6 +1,6 @@
 Feature: Add new item to ToDo list
 
-@ToDo
+@SP
   Scenario: LambdaTest ToDo Scenario
     Given user is on home Page
     When select First Item
