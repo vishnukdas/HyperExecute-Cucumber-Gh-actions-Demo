@@ -36,8 +36,7 @@ jobs:
               export LT_ACCESS_KEY=${{ github.event.inputs.accessKey }}
               echo $LT_USERNAME
               echo $LT_ACCESS_KEY
-              echo "Setting Job label as Jira ticket number"
-              export jobLabel="HYP-568"
+              export jobLabel="CucumberBdd on HYP"
               echo $jobLabel
               ./hyperexecute --user $LT_USERNAME --key $LT_ACCESS_KEY --config yaml/win/cucumber_hyperexecute_autosplit_sample.yaml --download-artifacts --force-clean-artifacts --labels $jobLabel
               cd .hyperexecute
